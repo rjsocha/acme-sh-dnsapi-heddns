@@ -26,7 +26,7 @@ dns_heddns_add() {
     return 1
   fi
   heenv_name="HEDDNS${heenv_name}"
-  _debug "Looking for \$HEDDNS${heenv_name} env variable"
+  _debug "Looking for \$${heenv_name} env variable"
   eval "he_password=\${${heenv_name}}"
   if [ -z "${he_password}" ]; then
     _debug "Looking for saved ${heenv_name} value"
